@@ -4,10 +4,27 @@
     <head>
         <meta charset='utf-8' />
 
-        <script src="script.js" type="application/javascript"></script>
+        <script src="script.js" type="application/javascript">
+        </script>
+
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        hi
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item" id="ravenkind"> </div>
+            <div class="grid-item"></div>
+            <div class="grid-item" id="tome"> </div>
+            <div class="grid-item" id="strahd"> </div>
+            <div class="grid-item" id="sunsword"> </div>
+            <div class="grid-item"></div>
+            <div class="grid-item" id="ally"> </div>
+            <div class="grid-item">
+                <button type="button" onclick="draw_cards()">
+                    Deal Cards
+                </button>
+            </div>
+        </div>
     </body>
 </html>
