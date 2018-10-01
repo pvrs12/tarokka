@@ -366,8 +366,14 @@ var cards_data = {
             "name": "Ghost",
 
             "file": "cards/high/0.png",
-            "ally_text": "A) I see a fallen paladin of the fallen order of knights. He lingers like a ghost in a dead dragon's lair.\nB) Stir the spirit of the clumsy knight whose crypt lies deep within the castle.",
-            "gm_ally_text": "A) This card refers to the revenant Sir Godfrey Gwilym (chapter 7, area Q37). Although initially unwilling to accompany the characters, he will do so if the characters convince him that the honor of the Order of the Silver Dragon can be restored with his help. Doing this requires a successful DC 15 Charisma (Persuasion) check.\nB) This card refers to Sir Klutz the phantom warrior (chapter 4, area K84, crypt 33). If Sir Klutz is Strahd's enemy, then the phantom warrior disappears not after seven days, but only after he or Strahd is reduced to 0 hit points.",
+            "ally_text": [
+                "I see a fallen paladin of the fallen order of knights. He lingers like a ghost in a dead dragon's lair.",
+                "Stir the spirit of the clumsy knight whose crypt lies deep within the castle."
+            ],
+            "gm_ally_text": [
+                "This card refers to the revenant Sir Godfrey Gwilym (chapter 7, area Q37). Although initially unwilling to accompany the characters, he will do so if the characters convince him that the honor of the Order of the Silver Dragon can be restored with his help. Doing this requires a successful DC 15 Charisma (Persuasion) check.",
+                "This card refers to Sir Klutz the phantom warrior (chapter 4, area K84, crypt 33). If Sir Klutz is Strahd's enemy, then the phantom warrior disappears not after seven days, but only after he or Strahd is reduced to 0 hit points."
+            ],
 
             "strahd_text": "Look to the father's tomb.",
             "gm_strahd_text": "Strahd faces the characters in the tomb of King Barov and Queen ARavenovia (area K88)."
@@ -376,8 +382,14 @@ var cards_data = {
             "name": "Innocent",
 
             "file": "cards/high/1.png",
-            "ally_text": "A) I see a young man with a kind heart. A mother's boy! He is strong in body but weak of mind. Seek him out in the village of Barovia.\nB) Evil's bride is the one you seek!",
-            "gm_ally_text": "A) This card refers to Parriwimple (see chapter 3, area E1). Although he's a simpleton, he won't travel to Castle Ravenloft without good cause. Characters can manipulate him into going by preying on his good heart. For instance, he might go there to help resuce missing Barovians, or to save the life of Ireena Kolyana, who is very beautiful. The characters must somehow deal with Bildrath, Parriwimple's employer, who won't let the foolish boy go to the castle for any reason.\nB) This card refers to Ireena Kolyana (chapter 3, area E4). Her brother Ismark, opposes the idea of Ireena's being taken to Castle Ravenloft, but hse insists on going there once the characters tell her about the card reading. Ireena won't accompany the characters however, until Kolyan Indirovich's body is laid to rest in the cemetery.",
+            "ally_text": [
+                "I see a young man with a kind heart. A mother's boy! He is strong in body but weak of mind. Seek him out in the village of Barovia.",
+                "Evil's bride is the one you seek!"
+            ],
+            "gm_ally_text": [
+                "This card refers to Parriwimple (see chapter 3, area E1). Although he's a simpleton, he won't travel to Castle Ravenloft without good cause. Characters can manipulate him into going by preying on his good heart. For instance, he might go there to help resuce missing Barovians, or to save the life of Ireena Kolyana, who is very beautiful. The characters must somehow deal with Bildrath, Parriwimple's employer, who won't let the foolish boy go to the castle for any reason.",
+                "This card refers to Ireena Kolyana (chapter 3, area E4). Her brother Ismark, opposes the idea of Ireena's being taken to Castle Ravenloft, but hse insists on going there once the characters tell her about the card reading. Ireena won't accompany the characters however, until Kolyan Indirovich's body is laid to rest in the cemetery."
+            ],
 
             "strahd_text": "He dwells with the one whose blood sealed his doom, a brother of light snuffed out too soon.",
             "gm_strahd_text": "Strahd faces the characters in Sergei's tomb (area K85)."
@@ -386,8 +398,14 @@ var cards_data = {
             "name": "Marionette",
 
             "file": "cards/high/2.png",
-            "ally_text": "A) What horror is this? I see a man made by a man. Ageless and alone, it haunts the towers of the castle.\nB) Look for a man of music, a man with two heads. He lives in a place of great hunger and sorrow.",
-            "gm_ally_text": "A) This card refers to Pidlwick II (chapter 4, area K59 & appendix D)\nB) This card refers to Cloven Belview (chapter 8, area S17), the two-headed mongrelfolk. Clovin serves the Abbot out of fear and perverse sense of loyalty. His job is to deliver food to the other mongrelfolk, whom he abhors. If abbot still lives, Clovin doesn't want to earn the master's ire by attempting to leave, and he refuses to accompany the characters. But if the Abbot dies, Clovin doesn't have any reason to remain in the abbey, so he's willing to come along if he is bribed with wine. Clovin provides no benefit to the party without his Viol.",
+            "ally_text": [
+                "What horror is this? I see a man made by a man. Ageless and alone, it haunts the towers of the castle.",
+                "Look for a man of music, a man with two heads. He lives in a place of great hunger and sorrow."
+            ],
+            "gm_ally_text": [
+                "This card refers to Pidlwick II (chapter 4, area K59 & appendix D)",
+                "This card refers to Cloven Belview (chapter 8, area S17), the two-headed mongrelfolk. Clovin serves the Abbot out of fear and perverse sense of loyalty. His job is to deliver food to the other mongrelfolk, whom he abhors. If abbot still lives, Clovin doesn't want to earn the master's ire by attempting to leave, and he refuses to accompany the characters. But if the Abbot dies, Clovin doesn't have any reason to remain in the abbey, so he's willing to come along if he is bribed with wine. Clovin provides no benefit to the party without his Viol."
+            ],
 
             "strahd_text": "Look to great hights. Find the beating heart of the cstle. He waits nearby.",
             "gm_strahd_text": "Strahd faces the charcters in the north tower peak (area K60)."
@@ -396,8 +414,12 @@ var cards_data = {
             "name": "Darklord",
 
             "file": "cards/high/3.png",
-            "ally_text": "Ah, the worst of all truths: You must face the evil of this land alone!",
-            "gm_ally_text": "Ther is no NPC who can inspire the characters",
+            "ally_text": [
+                "Ah, the worst of all truths: You must face the evil of this land alone!"
+            ],
+            "gm_ally_text": [
+                "There is no NPC who can inspire the characters"
+            ],
 
             "strahd_text": "He lurks in the depths of darkness, in the one place to which he must return.",
             "gm_strahd_text": "Strahd faces the characters in his tomb (area K86)."
@@ -406,8 +428,12 @@ var cards_data = {
             "name": "Mists",
 
             "file": "cards/high/4.png",
-            "ally_text": "A vistana wanders this land alone, searching for her mentor. She does not stay in one place for long. Seek her out at Saint Markovia's abbey, near the mists.",
-            "gm_ally_text": "This card refers to Ezmerelda d'Avenir (appendix D). She can be found in the Abbey of Saint Markovia (see chapter 8, area S19) as well as several other locations throughout Barovia.",
+            "ally_text": [
+                "A vistana wanders this land alone, searching for her mentor. She does not stay in one place for long. Seek her out at Saint Markovia's abbey, near the mists."
+            ],
+            "gm_ally_text": [
+                "This card refers to Ezmerelda d'Avenir (appendix D). She can be found in the Abbey of Saint Markovia (see chapter 8, area S19) as well as several other locations throughout Barovia."
+            ],
 
             "strahd_text": "The cards can't see where the evil lurks. The mists obscure all.",
             "gm_strahd_text": "This card offers no clue about where the final showdown with Strahd will occur. It can happen anywhere you like in Castle Ravenloft. Alternatively, Madam Eva tells the characters to return to her after at least three days, and she will consult the cards again for them, but only to discern the location of their enemy."
@@ -416,8 +442,12 @@ var cards_data = {
             "name": "Executioner",
 
             "file": "cards/high/5.png",
-            "ally_text": "Seek out the brother of the devil's bride. They call him \"the lesser,\" but he has a powerful soul",
-            "gm_ally_text": "This card refers to Ismark Kolyanovich (chapter 3, area E2). Ismark won't accompany the characters to CAstle Ravenloft until he knows that his sister, Ireena Kolyana, is safe",
+            "ally_text": [
+                "Seek out the brother of the devil's bride. They call him \"the lesser,\" but he has a powerful soul"
+            ],
+            "gm_ally_text": [
+                "This card refers to Ismark Kolyanovich (chapter 3, area E2). Ismark won't accompany the characters to CAstle Ravenloft until he knows that his sister, Ireena Kolyana, is safe"
+            ],
 
             "strahd_text": "I see a dark figure on a balcony, looking down upon this tortured land with a twisted smile.",
             "gm_strahd_text": "Strahd faces the characters at the overlook (area K6)."
@@ -426,8 +456,14 @@ var cards_data = {
             "name": "Broken One",
 
             "file": "cards/high/6.png",
-            "ally_text": "A) Your greatest ally will be a wizard. His mind is broken, but his spells are strong.\nB) I see a man of faith whose sanity hangs by a thread. He has lost someone close to him.",
-            "gm_ally_text": "This card refers to the Mad Mage of Mount Baratok (chapter 2, area M).\nB) This card refers to Donavich, the priest in the village of Barovia (chapter 3, area E5). He will not accompany the characters until his son Doru, is dead and buried.",
+            "ally_text": [
+                "Your greatest ally will be a wizard. His mind is broken, but his spells are strong.", 
+                "I see a man of faith whose sanity hangs by a thread. He has lost someone close to him."
+            ],
+            "gm_ally_text": [
+                "This card refers to the Mad Mage of Mount Baratok (chapter 2, area M).",
+                "This card refers to Donavich, the priest in the village of Barovia (chapter 3, area E5). He will not accompany the characters until his son Doru, is dead and buried."
+            ],
 
             "strahd_text": "He haunts the tomb of the man he envied above all.",
             "gm_strahd_text": "Strahd faces the characters in Sergei's tomb (area K86)."
@@ -436,8 +472,14 @@ var cards_data = {
             "name": "Tempter",
 
             "file": "cards/high/7.png",
-            "ally_text": "A) I see a child - a Vistana. You must hurry, for her fate hangs in the balance. Find her at the lake!\nB) I hear a wedding bell, or perhaps a death knell. It calls the to a mountainside abbey, wherein you will find a woman who is more than the sum of her parts.",
-            "gm_ally_text": "A) This card refers to Arabelle (chapter 2, area L). She gladly joins the party. But if she returns to her camp (chapter 5, area N9), her father Luvash, refuses to let her leave.\nB) This card refers to Vasilka, the flesh golem (chapter 8, area S13).",
+            "ally_text": [
+                "I see a child - a Vistana. You must hurry, for her fate hangs in the balance. Find her at the lake!",
+                "I hear a wedding bell, or perhaps a death knell. It calls the to a mountainside abbey, wherein you will find a woman who is more than the sum of her parts."
+            ],
+            "gm_ally_text": [
+                "This card refers to Arabelle (chapter 2, area L). She gladly joins the party. But if she returns to her camp (chapter 5, area N9), her father Luvash, refuses to let her leave.",
+                "This card refers to Vasilka, the flesh golem (chapter 8, area S13)."
+            ],
 
             "strahd_text": "I see a secret place - a vault of temptation hidden behind a woman of great beauty. The evil waits atop his tower of treasure.",
             "gm_strahd_text": "Strahd confronts the characters in the treasury (area K41). \"A woman of great beauty\" refers to the portrait of Tatyana hanging in the castle's study (area K37), which contains a secret door that leads to the treasury."
@@ -446,8 +488,12 @@ var cards_data = {
             "name": "Beast",
 
             "file": "cards/high/8.png",
-            "ally_text": "A werewolf holds a secret hatred for your enemy. Use her hatred to your advantage.",
-            "gm_ally_text": "This card refers to the werewolf Zuleika Toranescu (chapter 15, area Z7). She will accompany the characters if they promise to avenger her mate, Emil, by killing the leader of her pack, Kiril Stoyanovich.",
+            "ally_text": [
+                "A werewolf holds a secret hatred for your enemy. Use her hatred to your advantage."
+            ],
+            "gm_ally_text": [
+                "This card refers to the werewolf Zuleika Toranescu (chapter 15, area Z7). She will accompany the characters if they promise to avenger her mate, Emil, by killing the leader of her pack, Kiril Stoyanovich."
+            ],
 
             "strahd_text": "The beast sits on his dark throne.",
             "gm_strahd_text": "Strahd faces the characters in the audience hall (area K25)."
@@ -456,8 +502,14 @@ var cards_data = {
             "name": "Donjon",
 
             "file": "cards/high/9.png",
-            "ally_text": "A) Search for a troubled young man surrounded by wealth and madness. His home is his prison\nB) Find a girl driven to insanity, locked in the heart o fher dead father's house. Curing her madness is key to your success.",
-            "gm_ally_text": "A) This card refers to Victor Vallakovich (chatper 5, area N3t). Realizing that the characters are the key to his salvation, he enthusiastically leaves home and accompanies them to Castle Ravenloft.\nB) This card refers to Stella Wachter (chapter 5, area N4n). She grant the party no benefit unless her madness is cured. With her wits restored, Stella is happy to join the party and leave her rotten family behind.",
+            "ally_text": [
+                "Search for a troubled young man surrounded by wealth and madness. His home is his prison",
+                "Find a girl driven to insanity, locked in the heart of her dead father's house. Curing her madness is key to your success."
+            ],
+            "gm_ally_text": [
+                "This card refers to Victor Vallakovich (chatper 5, area N3t). Realizing that the characters are the key to his salvation, he enthusiastically leaves home and accompanies them to Castle Ravenloft.",
+                "This card refers to Stella Wachter (chapter 5, area N4n). She grant the party no benefit unless her madness is cured. With her wits restored, Stella is happy to join the party and leave her rotten family behind."
+            ],
 
             "strahd_text": "He lurks in a hall of bones, in the dark pits of his castle.",
             "gm_strahd_text": "Strahd faces the characters in the hall of bones (area K67)."
@@ -466,8 +518,12 @@ var cards_data = {
             "name": "Raven",
 
             "file": "cards/high/10.png",
-            "ally_text": "Find the leader of the feathered ones who live among the vines. Though old, he has one more fight left in him.",
-            "gm_ally_text": "This card refers to Davian Martikov (chapter 12, \"The Wizard of the Wines\"). The old wereraven, realizing that he has a chance to end Strahd's tyranny, leaves his vinyard and winery in the capable hands of his sons, Adrian and Elvir. But before he travels to Castle Ravenloft to face Strahd, Davian insists on reconciling with his third son, Urwin Martikov (chapter 5, area N2).",
+            "ally_text": [
+                "Find the leader of the feathered ones who live among the vines. Though old, he has one more fight left in him."
+            ],
+            "gm_ally_text": [
+                "This card refers to Davian Martikov (chapter 12, \"The Wizard of the Wines\"). The old wereraven, realizing that he has a chance to end Strahd's tyranny, leaves his vinyard and winery in the capable hands of his sons, Adrian and Elvir. But before he travels to Castle Ravenloft to face Strahd, Davian insists on reconciling with his third son, Urwin Martikov (chapter 5, area N2)."
+            ],
 
             "strahd_text": "Look to the mother's tomb.",
             "gm_strahd_text": "Strahd faces the characters in the tomb of King Barov and Queen Ravenovia (area K88)."
@@ -476,8 +532,12 @@ var cards_data = {
             "name": "Seer",
 
             "file": "cards/high/11.png",
-            "ally_text": "Look for a dusk elf living among the Vistani. He has suffered a great loss and is haunted by dark dreams. Help him, and he will help you in return.",
-            "gm_ally_text": "This card refers to Kasimir Velikov (cpater 5, area N9a). The dusk elf accompanies the characters to Castle Ravenloft only after they lead him to the Amber Temple and find the means to resurrect his dead sister, Patrina Velikovna.",
+            "ally_text": [
+                "Look for a dusk elf living among the Vistani. He has suffered a great loss and is haunted by dark dreams. Help him, and he will help you in return."
+            ],
+            "gm_ally_text": [
+                "This card refers to Kasimir Velikov (cpater 5, area N9a). The dusk elf accompanies the characters to Castle Ravenloft only after they lead him to the Amber Temple and find the means to resurrect his dead sister, Patrina Velikovna."
+            ],
 
             "strahd_text": "He waits for you in a place of wisdom, warmth, and despair. Great secrets are there.",
             "gm_strahd_text": "Strahd faces the characters in thE study (area K37)."
@@ -486,8 +546,12 @@ var cards_data = {
             "name": "Artifact",
 
             "file": "cards/high/12.png",
-            "ally_text": "Look for an entertaining man with a monkey. This man is more than he seems.",
-            "gm_ally_text": "This card refers to Rictavio (appendix D), who can be found at the Blue Water Inn, in Vallaki (chapter 5, area N2). Normally reluctant to accompany the characters, Rictavio changes his tune if the characters tell him about the card reading. He sheds his disguise and introduces himself as Dr. Rudolf van Richten.\n&emsp;The characters might think that Gadof Blinsky, the toymaker of Vallaki (area N7), is the figure they seek, because he has a pet monkey. If the speak to him about the possibility, Blinksy jokes that he and the monkey are \"old friends,\" but if the caracters ask him to come with them to fight Strahd, he politely declines. If the characters tell him about the tarokka reading, Blinksy admits that he acquired the monkey from a half-elf carnival ringmaster named Rictavio.",
+            "ally_text": [
+                "Look for an entertaining man with a monkey. This man is more than he seems."
+            ],
+            "gm_ally_text": [
+                "This card refers to Rictavio (appendix D), who can be found at the Blue Water Inn, in Vallaki (chapter 5, area N2). Normally reluctant to accompany the characters, Rictavio changes his tune if the characters tell him about the card reading. He sheds his disguise and introduces himself as Dr. Rudolf van Richten.\n&emsp;The characters might think that Gadof Blinsky, the toymaker of Vallaki (area N7), is the figure they seek, because he has a pet monkey. If the speak to him about the possibility, Blinksy jokes that he and the monkey are \"old friends,\" but if the caracters ask him to come with them to fight Strahd, he politely declines. If the characters tell him about the tarokka reading, Blinksy admits that he acquired the monkey from a half-elf carnival ringmaster named Rictavio."
+            ],
 
             "strahd_text": "He lurks in the darkness where the morning light once shone - a sacred place.",
             "gm_strahd_text": "Strahd faces the characters in the chapel (area K15)."
@@ -496,8 +560,14 @@ var cards_data = {
             "name": "Horseman",
 
             "file": "cards/high/13.png",
-            "ally_text": "A) I see a dead man of noble birth, buarded by his widow. Return to life the dead man's corpse, and he will be your staunch ally.\nB) A man of death named Arrigal will forsake his dark lord to serve your cause. Beware! He has a rotten soul.",
-            "gm_ally_text": "A) This card refers to Nikolai Wachter the elder, who is dead (chapter 5, area N4o). If the characters cast a raise dead spell or a resurrection spell on his preserved corpse, Nikokai (LN male human noble) agress to help the characters once he feels well enough, despite his wife's protests. Although his family has long supported Strahd, Nikolai came to realize twoard the end of his life that Strahd must be destroyed to save Barovia\n&emsp;If the characters dont' have the means to raise Nikolai from the dead, Rictavio (appendix D) gives them a spell scroll of raise dead if hea lears of their need. If they're staying at the Blue Water Inn, he leaves the scroll in one of their rooms.\nB) This card refers to the Vistani assassin Arrigal (chapter 5, area N9c). If the characters mention this card reading to him he accepts his fate and accompanies them. If the characters succeed in defeating Strahd, Arrigal betrays and attacks them, believing that he is destined to become Barovia's new lord.",
+            "ally_text": [
+                "I see a dead man of noble birth, buarded by his widow. Return to life the dead man's corpse, and he will be your staunch ally.",
+                "A man of death named Arrigal will forsake his dark lord to serve your cause. Beware! He has a rotten soul."
+            ],
+            "gm_ally_text": [
+                "This card refers to Nikolai Wachter the elder, who is dead (chapter 5, area N4o). If the characters cast a raise dead spell or a resurrection spell on his preserved corpse, Nikokai (LN male human noble) agress to help the characters once he feels well enough, despite his wife's protests. Although his family has long supported Strahd, Nikolai came to realize twoard the end of his life that Strahd must be destroyed to save Barovia.\n&emsp;If the characters don't have the means to raise Nikolai from the dead, Rictavio (appendix D) gives them a spell scroll of raise dead if hea lears of their need. If they're staying at the Blue Water Inn, he leaves the scroll in one of their rooms.",
+                "This card refers to the Vistani assassin Arrigal (chapter 5, area N9c). If the characters mention this card reading to him he accepts his fate and accompanies them. If the characters succeed in defeating Strahd, Arrigal betrays and attacks them, believing that he is destined to become Barovia's new lord."
+            ],
 
             "strahd_text": "He lurks in the one place to which he must return - a place of death.",
             "gm_strahd_text": "Strahd faces the characters in his tomb (area K86)."

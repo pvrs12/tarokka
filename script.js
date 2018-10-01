@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 });
 
-var low_picks = [];
-var high_picks = [];
-
 var gm_view_on = false;
 
 function draw_cards() {
@@ -14,6 +11,9 @@ function draw_cards() {
     let ally = document.getElementById("ally");
     let strahd = document.getElementById("strahd");
 
+    let low_details = document.getElementById("low_details");
+    let high_details = document.getElementById("high_details");
+
     try {
         tome.removeChild(tome.lastChild)
         ravenkind.removeChild(ravenkind.lastChild)
@@ -21,11 +21,9 @@ function draw_cards() {
         ally.removeChild(ally.lastChild)
         strahd.removeChild(strahd.lastChild)
 
-        let low_details = document.getElementById("low_details");
         while(low_details.lastChild) {
             low_details.removeChild(low_details.lastChild);
         }
-        let high_details = document.getElementById("high_details");
         while(high_details.lastChild) {
             high_details.removeChild(high_details.lastChild);
         }
@@ -34,11 +32,11 @@ function draw_cards() {
     }
 
     //low picks
-    low_picks = [];
+    let low_picks = [];
     low_picks.push(draw_low_deck(low_picks));
     let element = document.createElement("img");
     element.addEventListener("click", (event) => {
-        reveal_card('low', 0, event.target);
+        reveal_card('low', low_picks[0], event.target);
     });
     element.setAttribute("src", "cards/back.png");
     element.setAttribute("title", "This card tells of history. Knowledge of the ancient will help you better understand your enemy.");
@@ -48,7 +46,7 @@ function draw_cards() {
     low_picks.push(draw_low_deck(low_picks));
     element = document.createElement('img');
     element.addEventListener("click", (event) => {
-        reveal_card('low', 1, event.target);
+        reveal_card('low', low_picks[1], event.target);
     });
     element.setAttribute("src", "cards/back.png");
     element.setAttribute("title", "This card tells of a powerful force for good and protection, a holy symbol of great hope.");
@@ -58,7 +56,7 @@ function draw_cards() {
     low_picks.push(draw_low_deck(low_picks));
     element = document.createElement('img');
     element.addEventListener("click", (event) => {
-        reveal_card('low', 2, event.target);
+        reveal_card('low', low_picks[2], event.target);
     });
     element.setAttribute("src", "cards/back.png");
     element.setAttribute("title", "This is a card of power and strength. It tells of a weapon of vengeance: a sword of sunlight.");
@@ -66,11 +64,11 @@ function draw_cards() {
     sunsword.appendChild(element);
 
     //high picks
-    high_picks = [];
+    let high_picks = [];
     high_picks.push(draw_high_deck(high_picks));
     element = document.createElement('img');
     element.addEventListener("click", (event) => {
-        reveal_card('high', 0, event.target);
+        reveal_card('high', high_picks[0], event.target);
     });
     element.setAttribute("src", "cards/back.png");
     element.setAttribute("title", "This card sheds light on one who will help you greatly in the battle against darkness.");
@@ -80,7 +78,7 @@ function draw_cards() {
     high_picks.push(draw_high_deck(high_picks));
     element = document.createElement('img');
     element.addEventListener("click", (event) => {
-        reveal_card('high', 1, event.target);
+        reveal_card('high',  high_picks[1], event.target);
     });
     element.setAttribute("src", "cards/back.png");
     element.setAttribute("title", "Your enemy is a creature of darkness, whose powers are beyond mortality. This card will lead you to him!");
@@ -106,29 +104,35 @@ function draw_cards() {
         let italics = document.createElement("i");
         italics.appendChild(document.createTextNode(cards_data.low[low_picks[i]].gm_text));
         low_details.appendChild(italics);
-        low_details.appendChild(document.createElement("br"));
-        low_details.appendChild(document.createElement("br"));
+        low_details.appendChild(document.createElement("hr"));
     }
 
-    for(let i = 0; i < high_picks.length; ++i) {
-        let bold = document.createElement("b");
-        bold.appendChild(document.createTextNode(cards_data.high[high_picks[i]].name));
-        high_details.appendChild(bold);
+    let bold = document.createElement("b");
+    bold.appendChild(document.createTextNode(cards_data.high[high_picks[0]].name));
+    high_details.appendChild(bold);
+    let ally_texts = cards_data.high[high_picks[0]].ally_text;
+    for(let i = 0; i < ally_texts.length; ++i) {
         high_details.appendChild(document.createElement("br"));
-        high_details.appendChild(document.createTextNode(cards_data.high[high_picks[i]].ally_text));
+        high_details.appendChild(document.createTextNode(String.fromCharCode(65 + i) + ") "));
+        high_details.appendChild(document.createTextNode(cards_data.high[high_picks[0]].ally_text[i]));
         high_details.appendChild(document.createElement("br"));
         let italics = document.createElement("i");
-        italics.appendChild(document.createTextNode(cards_data.high[high_picks[i]].gm_ally_text));
+        italics.appendChild(document.createTextNode(cards_data.high[high_picks[0]].gm_ally_text[i]));
         high_details.appendChild(italics);
-        high_details.appendChild(document.createElement("br"));
-        high_details.appendChild(document.createTextNode(cards_data.high[high_picks[i]].strahd_text));
-        high_details.appendChild(document.createElement("br"));
-        italics = document.createElement("i");
-        italics.appendChild(document.createTextNode(cards_data.high[high_picks[i]].gm_strahd_text));
-        high_details.appendChild(italics);
-        high_details.appendChild(document.createElement("br"));
-        high_details.appendChild(document.createElement("br"));
     }
+    high_details.appendChild(document.createElement("hr"));
+
+    bold = document.createElement("b");
+    bold.appendChild(document.createTextNode(cards_data.high[high_picks[1]].name));
+    high_details.appendChild(bold);
+    high_details.appendChild(document.createElement("br"));
+    high_details.appendChild(document.createTextNode(cards_data.high[high_picks[1]].strahd_text));
+    high_details.appendChild(document.createElement("br"));
+    italics = document.createElement("i");
+    italics.appendChild(document.createTextNode(cards_data.high[high_picks[1]].gm_strahd_text));
+    high_details.appendChild(italics);
+    high_details.appendChild(document.createElement("br"));
+    high_details.appendChild(document.createElement("br"));
 }
 
 function reveal_card(deck, card, target) {
